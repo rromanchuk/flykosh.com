@@ -1,0 +1,24 @@
+A
+800
+LIBRARY
+
+
+
+
+EXPORT forests/default_replacement_1000/1/wetland_shrub/cold_wet.for forests/default_replacement_1000/1/wetland_shrub/cold_dry/forest.for
+
+EXPORT forests/default_replacement_1000/1/broadleaf_dense/very_cold_wet.for forests/default_replacement_1000/1/broadleaf_dense/very_cold_dry/forest.for
+
+
+EXPORT forests/default_replacement_1000/1/broadleaf_dense/cold_semidry.for forests/default_replacement_1000/1/broadleaf_dense/cold_dry/18m-28m/forest.for
+
+EXPORT forests/default_replacement_1000/1/mixed_dense/cold_semidry.for forests/default_replacement_1000/1/mixed_dense/cold_dry/18m-32m/forest.for
+
+# PE Aliases
+EXPORT pe_forests/mixed/lg.for forests/default_replacement_1000/1/mixed_dense/cold_dry/18m-32m/forest.for
+EXPORT pe_forests/mixed/md.for forests/default_replacement_1000/1/mixed_dense/cold_dry/8m-14m/forest.for
+EXPORT pe_forests/mixed/sm.for forests/default_replacement_1000/1/mixed_dense/cold_dry/5m-8m/forest.for
+
+EXPORT pe_forests/broad/lg.for forests/default_replacement_1000/1/broadleaf_dense/cold_dry/18m-28m/forest.for
+EXPORT pe_forests/broad/md.for forests/default_replacement_1000/1/broadleaf_dense/cold_dry/8m-14m/forest.for
+EXPORT pe_forests/broad/sm.for forests/default_replacement_1000/1/broadleaf_dense/cold_dry/6m-8m/forest.for

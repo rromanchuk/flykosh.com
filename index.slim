@@ -7,7 +7,6 @@ html
 
     title KOSH Wittman Regional - EAA AirVenture Oshkosh 2.7
 
-
   body
     .container
 
@@ -17,7 +16,7 @@ html
             li.nav-item role="presentation"
               a#home-tab.nav-link.active href="#home" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true"  Required 
             li.nav-item
-              a.nav-link href="#packages" data-toggle="tab" role="tab" aria-controls="packages" aria-selected="false"  Individual Packages
+              a.nav-link href="#packages" data-toggle="tab" role="tab" aria-controls="packages" aria-selected="false"  Attribution
             li.nav-item
               a#ortho-tab.nav-link href="#ortho" data-toggle="tab" role="tab" aria-controls="ortho" aria-selected="false" Optional ortho extensions 
             li.nav-item
@@ -26,19 +25,17 @@ html
           #resources.tab-content
 
             #home.tab-pane.fade.show.active aria-labelledby="home-tab" role="tabpanel"
-              h6 Event scenery
-              ul.card-text
+              h6 Installation
+              ol.card-text
+                li 
+                  ' Install 
+                  a href="https://www.opensceneryx.com/" OpensceneryX
                 li
-                  a href="files/PilotEdge+KOSH+v0.2.zip" PilotEdge KOSH v0.2
+                  ' Install the event scenery 
+                  a href="PE+EAA+2020.zip" PE EAA 2020.zip
+                li Afer unzipping the event scenery, drag the folder into your Custom Scenery directory of X-Plane 11
 
-              h6 Required event scenary libraries
-              p 
-                ' These are all the required libraries as a single .zip package from the 
-                a#ortho-tab href="#ortho" data-toggle="tab" role="tab" aria-controls="ortho" aria-selected="false" Individual Packages 
-                ' tab 
-              ul.card-text
-                li
-                  a href="files/PilotEdge_EAA_libs.zip" PilotEdge_EAA_libs.zip
+              
               
               h6 What is this?
               p.card-text
@@ -72,22 +69,10 @@ html
                     h5.card-title Fisk, Fisk Ave, KOSH
                     p.card-text KOSH uses Bing ZL19, Fisk Google ZL19, Fisk Ave Bing ZL18
 
-              
 
-              h6.card-title Installation
-              p.card-text 
-
-              h6.card-title Scenery source code
-              p.card-text
-
-              h6.card-title Contact
               
 
             #packages.tab-pane.fade aria-labelledby="packages-tab" role="tabpanel"
-              h5.card-title Event scenery
-              ul.card-text
-                li
-                  a href="files/PilotEdge+KOSH+v0.2.zip" PilotEdge KOSH v0.2
               h5.card-title The original
               ul.card-text
                 li
@@ -130,13 +115,14 @@ html
                   a href="files/world-models-0.8.0.zip" World Models Library
             #ortho.tab-pane.fade aria-labelledby="ortho-tab" role="tabpanel"
               h5 Optional Ortho4XP coverage
-              p These bundled packages include more extensive photo realistic ortho imagery along the route. There are two versions you can pick from. The normal version includes both Bing/Google imagery of at least ZL 18, and ZL 19. The UltraHD version is even more aggressive with ZL19 along the arrival.
-              p To install this scenery
-              ul
+              p These bundled packages include more extensive photo realistic ortho imagery along the route. There are two versions you can pick from. The normal version includes both Bing/Google imagery of at least ZL 18, and ZL 19. The UltraHD version is even more aggressive with ZL19 along the arrival. Overlay
+              h6 Installation
+              ol
                 li pick zPE or zPE_UHD
-                li uncompress the .7z file by double clicking the .001 when you have all of them downloaded
+                li download all the .7z.00X files for the version you are interested in.
+                li after all files are downloaded, double click on the xx.7z.001 file. This will extract a single folder from the split .7z compressed files. 
                 li drop the folder into your Custom Scenery.
-                li download, unzip, the overlays at the bottom yOrtho4XP_Overlays 
+                li (optional) download, unzip, the overlays at the bottom yOrtho4XP_Overlays 
                 li start x-plane
                 li quit x-plane
                 li 
@@ -144,6 +130,7 @@ html
               .card
                 .card-body
                   h6.card-title Normal version
+                  hr
                   table.table-borderless.table-sm
                     tbody
                       tr
@@ -172,7 +159,9 @@ html
               .card.my-3
                 .card-body
                   h6.card-title UltraHD version
-
+                  hr
+                  a href="img/uhd.png"
+                    img.card-img-top.img-fluid.img-thumbnail src="img/uhd.png" height="200"
                   table.table-borderless.table-sm
                     tbody
                       tr
@@ -181,45 +170,53 @@ html
                       tr
                         td
                         td
-                          | zPE_UHD.7z.001
+                          a href="files/ortho/zPE_UHD.7z.001" zPE_UHD.7z.001
                       tr
                         td
                         td
-                          | zPE_UHD.7z.002
+                          a href="files/ortho/zPE_UHD.7z.002" zPE_UHD.7z.002
                       tr
                         td
                         td
-                          | zPE_UHD.7z.003
+                          a href="files/ortho/zPE_UHD.7z.003" zPE_UHD.7z.003
                       tr
                         td
                         td 
-                          | zPE_UHD.7z.004
+                          a href="files/ortho/zPE_UHD.7z.004" zPE_UHD.7z.004
                       tr
                         td
                         td
-                          | zPE_UHD.7z.005
+                          a href="files/ortho/zPE_UHD.7z.005" zPE_UHD.7z.005
                       tr
                         td
                         td
-                          | zPE_UHD.7z.006
+                          a href="files/ortho/zPE_UHD.7z.006" zPE_UHD.7z.006
                       tr
                         td
                         td
-                          | zPE_UHD.7z.007
-              h6 Overlays
-              table.table-borderless.table-sm
-                tr
-                   td yOrtho4XP_Overlays 
-                   td
-                    a href="files/ortho/yOrtho4XP_Overlays.zip" yOrtho4XP_Overlays.zip
+                          a href="files/ortho/zPE_UHD.7z.007" zPE_UHD.7z.007
+              .card.my-3
+                .card-body
+                  h6 Overlays
+                  hr
+                  table.table-borderless.table-sm
+                    tr
+                       td 
+                       td
+                        a href="files/ortho/yOrtho4XP_Overlays.zip" yOrtho4XP_Overlays.zip
             #changes.tab-pane.fade aria-labelledby="changes-tab" role="tabpanel"
               ul
+                li Replaced Dot4.png, Dot6.png, Dot8.png
                 li Refined Data+43-089.mesh to include OSM data for unclassified road networks in order to have Fisk Ave included in the base mesh 
                 li Added GO2 ZL18 draped ortho imagery along Fisk Ave - w/ @KevinM
                 li replaced OSHwittmPalet1.png with "2020" - @Marcusmmc
                 li Included HD tree resources in the scenery package as it's an optional install for openscenery x. 
             
-      
+        .card-footer
+          ' @rromanchuk on 
+          a href="https://www.pilotedge.net/pages/discord-community" pilotedge discord
+
+
 
                   
     script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
