@@ -1,0 +1,8 @@
+Copyright and Distribution
+
+This Library is freeware.
+Anyone can use it and distribute inside their own scenery's package, as for free.
+To use it inside Pay ware packages, please contact the author first at email shevchenko.o.s.geonorma@gmail.com
+The author rights concerning this software must be respected.
+
+Copyright© 2016

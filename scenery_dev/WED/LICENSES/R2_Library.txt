@@ -1,0 +1,39 @@
+﻿---------------------------
+ R2_Library for X-Plane 10
+  Version 2 (27.2.2016)
+---------------------------
+
+Installation
+------------
+UNPACK archive to Custom scenery (it would by looks like this - XPLroot/Custom Scenery/R2_Library)
+
+Notes
+-----
+- Switch to WINTER TREE textures
+	rename file textures/R2_trees.dds to textures/R2_trees-summer.dds for example
+	rename file textures/R2_trees-zimni.png to textures/R2_trees.png
+	For summer rename it back.
+- WIND TURBINES is recomended to place by propeller to the north. Heading is 180. Turbine will rotate to true wind direction. For wind turbine fields I recommend to use autogen so turbine will not rotate same speed. Heigth of turbine is including propeller. For 100m turbine is true heigth of generator 80m.
+- COOLING TOWERS have autogen too, some of them will smoke
+
+License
+-------
+1. The R2_Library (the "Library") could be use by anyone for non-commercial use. The Library must be always as a indivisible whole for extension of X-Plane. It is not possible to split, modify or using only parts of the Library.
+2. Authors could add further objects to the Library what gives them a partial copyright but not the right to remove any part of the Library.
+3. Distribution of the Library is possible form xplane.cz's web site only or from sites explicitly listed in this license.
+4. The Library must not be used on public action without permission of its authors.
+
+Authors
+-------
+Melichar Luděk
+Petr Bednář
+Roman Svoboda
+Jan Štěpnička
+Jiří Masník
+Milan Žejdlík
+Martin Mojš
+Milan Smid
+
+Homepage
+--------
+http://r2.xpl.cz
