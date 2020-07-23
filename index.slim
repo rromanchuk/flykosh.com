@@ -5,6 +5,7 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
     link rel="stylesheet" href="css/bootstrap.min.css" 
 
+
     title SimVenture 2020
 
   body
@@ -21,16 +22,22 @@ html
               a#ortho-tab.nav-link href="#ortho" data-toggle="tab" role="tab" aria-controls="ortho" aria-selected="false" Optional ortho extensions 
             li.nav-item
               a#changes-tab.nav-link href="#changes" data-toggle="tab" role="tab" aria-controls="changes" aria-selected="false"  Changelog
-        .card-body          
+        .card-body
+          h3 SimVenture 2020
+          
+
           #resources.tab-content
 
             #home.tab-pane.fade.show.active aria-labelledby="home-tab" role="tabpanel"
-              h6 Installation
+              .alert.alert-info
+                strong Scenery updated to v1.3, latest incremental update July 22 16:00PST
+              h5 Installation
+              hr
               ol.card-text
                 li 
                   p
                     ' Install 
-                    a href="https://www.opensceneryx.com/" OpensceneryX
+                    a href="https://www.opensceneryx.com/" OpensceneryX 
                     ' with the optional static aircraft and HD Forests selected. You can also download the complete compressed package here: 
                     a href="OpenSceneryX.zip" OpenSceneryX.zip
                   .alert.alert-warning
@@ -38,12 +45,18 @@ html
                     ' If you already have OpenScenryX installed, please rerun the installer and verify you are updated and have the otional static aircraft and forest replacement selected. 
                 li
                   ' Install the event scenery 
-                  a href="SimVenture+2020.zip" SimVenture 2020.zip
-                li Afer unzipping the event scenery, drag the folder into your Custom Scenery directory of X-Plane 11
+                  a href="SimVenture+2020+v1.3.zip" SimVenture 2020 v1.3.zip 
+                  small.text-muted 1.5G, last modified July 22th 2020
+                li Afer unzipping the event scenery, drag the folder into your Custom Scenery directory of X-Plane 11. If you had a previous version of this scenery, remove it!
 
               
-              
-              h6 What is this?
+              / h5 Incremental Updates
+              / hr
+              / p 
+              /   ' If you already have the intital scenery installed you can install the incremental updates below by unzipping and replacing the existing "Earth nav data" in the SimVenture 2020 scenery with the updated 
+              /   a href="Earth+nav+data.zip" Earth nav data.zip 
+              /   small.text-muted ~400KB, last modified July 22th 2020
+              h6.mt-5 What is this?
               p.card-text
                 | This scenery is a slightly modified fork of the fantastic scenery 
                 a href="https://forums.x-plane.org/index.php?/files/file/42118-kosh-wittman-regional-eaa-airventure-oshkosh/" target="_blank" KOSH EAA AirVenture Oshkosh 2.7
@@ -51,17 +64,11 @@ html
               p.card-text The focus of these changes are to offer a consistent experience between connected users flying a specific scenario based VFR arrival procedure into KOSH. The biggest changes include replacing the existing draped ortho imagery, slightly extending the original bounds, and adding additional locations that are critical VFR reporting points. Generally scenery development minimizes this imagery in order to not interfere with other installed scenery or custom mesh + ortho imagery added by the user. In this context, we do want these areas to take priority so pilots are all looking at the same thing. 
 
               p.card-text 
-                | The ortho imagery included in this library is still very limited and does not cover the entire arrival. This is intentional in order to respect any custom scenery you may be running for the area. To get full route coverage you can install the optional Ortho4Xp package from the 
+                | The ortho imagery included in this library is still very limited and does not cover the entire arrival. This is intentional in order to respect any custom scenery you may be running for the area. To get full route coverage you can install the optional Ortho4Xp package from 
                 a href="#ortho" Ortho tab
 
 
               .card-deck.mb-2
-                .card
-                  a href="img/f.jpg"
-                    img.card-img-top src="img/f.jpg"
-                  .card-body
-                    h5.card-title Fon du Lac
-                    p.card-text Bing imagery, ZL19
                 .card
                   a href="img/r.jpg"
                     img.card-img-top src="img/r.jpg"
@@ -121,47 +128,24 @@ html
                   a href="files/world-models-0.8.0.zip" World Models Library
             #ortho.tab-pane.fade aria-labelledby="ortho-tab" role="tabpanel"
               h5 Optional Ortho4XP coverage
-              p These bundled packages include more extensive photo realistic ortho imagery along the route. There are two versions you can pick from. The normal version includes both Bing/Google imagery of at least ZL 18, and ZL 19. The UltraHD version is even more aggressive with ZL19 along the arrival. Overlay
+              p These bundled packages include more extensive photo realistic ortho imagery along the route. There are two versions you can pick from. The normal version includes both Bing/Google imagery of at least ZL 18, and ZL 19. The UltraHD version is even more aggressive with ZL19 along the arrival. The overlays are provided by the main Simventure 2020 scenery package, but only for the extended arrival route. If you plan on flying through these tiles, but outside the focus area, the default overlays are included at the bottom of this page. Most people won't need these. 
+
               h6 Installation
               ol
-                li pick zPE or zPE_UHD
-                li download all the .7z.00X files for the version you are interested in.
-                li after all files are downloaded, double click on the xx.7z.001 file. This will extract a single folder from the split .7z compressed files. 
+                li 
+                  del pick zPE 
+                  ' or zPE_UHD
+                li download ALL the .7z.00X files to a single directory
+                li after all files are downloaded, double click on the xx.7z.001 file. This will extract a single folder from the split .7z compressed files. You will need 7zip installed to uncompress these files.
                 li drop the folder into your Custom Scenery.
-                li (optional) download, unzip, the overlays at the bottom yOrtho4XP_Overlays 
+                li 
+                  del (optional) download, unzip, the overlays at the bottom yOrtho4XP_Overlays 
                 li start x-plane
                 li quit x-plane
                 li 
-                  | open scenery_packs.ini and put zPE(_UHD) at the bottom, and yOrtho4XP_Overlays above it.
-              .card
-                .card-body
-                  h6.card-title Normal version
-                  hr
-                  table.table-borderless.table-sm
-                    tbody
-                      tr
-                        td zPE
-                        td
-                      tr
-                        td
-                        td
-                          a href="files/ortho/zPE.7z.001" zPE.7z.001
-                      tr
-                        td
-                        td
-                          a href="files/ortho/zPE.7z.002" zPE.7z.002
-                      tr
-                        td
-                        td
-                          a href="files/ortho/zPE.7z.003" zPE.7z.003
-                      tr
-                        td
-                        td 
-                          a href="files/ortho/zPE.7z.004" zPE.7z.004
-                      tr
-                        td
-                        td
-                          a href="files/ortho/zPE.7z.005" zPE.7z.005
+                  | open scenery_packs.ini and put zPE(_UHD) at the bottom, 
+                  del and yOrtho4XP_Overlays above it.
+              
               .card.my-3
                 .card-body
                   h6.card-title UltraHD version
@@ -201,17 +185,49 @@ html
                         td
                         td
                           a href="files/ortho/zPE_UHD.7z.007" zPE_UHD.7z.007
+              .card
+                .card-body
+                  del
+                    h6.card-title Normal version
+                    hr
+                    table.table-borderless.table-sm
+                      tbody
+                        tr
+                          td zPE
+                          td
+                        tr
+                          td
+                          td
+                            a href="files/ortho/zPE.7z.001" zPE.7z.001
+                        tr
+                          td
+                          td
+                            a href="files/ortho/zPE.7z.002" zPE.7z.002
+                        tr
+                          td
+                          td
+                            a href="files/ortho/zPE.7z.003" zPE.7z.003
+                        tr
+                          td
+                          td 
+                            a href="files/ortho/zPE.7z.004" zPE.7z.004
+                        tr
+                          td
+                          td
+                            a href="files/ortho/zPE.7z.005" zPE.7z.005
               .card.my-3
                 .card-body
-                  h6 Overlays
-                  hr
-                  table.table-borderless.table-sm
-                    tr
-                       td 
-                       td
-                        a href="files/ortho/yOrtho4XP_Overlays.zip" yOrtho4XP_Overlays.zip
+                  del
+                    h6 Overlays
+                    hr
+                    table.table-borderless.table-sm
+                      tr
+                         td 
+                         td
+                          a href="files/ortho/yOrtho4XP_Overlays.zip" yOrtho4XP_Overlays.zip
             #changes.tab-pane.fade aria-labelledby="changes-tab" role="tabpanel"
               ul
+                li Added object priorties to better respond to number of real world objects graphics setting. Users facing FPS issues can now use level two and three in order to lower the CPU demand at KOSH
                 li Replaced Dot4.png, Dot6.png, Dot8.png
                 li Refined Data+43-089.mesh to include OSM data for unclassified road networks in order to have Fisk Ave included in the base mesh 
                 li Added GO2 ZL18 draped ortho imagery along Fisk Ave - w/ @KevinM
@@ -227,3 +243,13 @@ html
                   
     script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
     script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"
+    javascript:
+      $(function(){
+        var hash = window.location.hash;
+        hash && $('ul.nav.nav-tabs a[href="' + hash + '"]').tab('show'); 
+        $('ul.nav.nav-tabs a').click(function (e) {
+           $(this).tab('show');
+           var scrollmem = $('body').scrollTop();
+           window.location.hash = this.hash;
+        });
+      });
